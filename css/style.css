@@ -99,8 +99,9 @@ section,
 .info .about {
   margin-top: 3rem;
   padding: 2.5rem;
-  gap: 1rem;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 5px;
   width: 60%;
   height: 320px;
@@ -108,27 +109,35 @@ section,
   background-color: var(--third);
   box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem 0.7rem 0;
 }
+.text {
+  margin-right: 2rem;
+}
 
 .info .about h1 {
-  font-weight: 800;
-  font-size: 3rem;
+  font-weight: 900;
+  font-size: 2.3rem;
+  line-height: 1.2;
   color: var(--second);
   text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
 }
 
-.info .about h1 p {
+.info .about h1 span {
+  display: block;
+}
+
+.info .about  p {
   font-weight: 700;
-  font-size: 1.2rem;
-  margin-top: 20px;
+  font-size: 0.95rem;
+  max-width: 420px;
+  margin-top: 1.2rem;
+  line-height: 1.5;
   color: var(--second);
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .info .about img {
-  width: 29%;
+  max-width: 400px;
   box-shadow: 10px;
-  position: absolute;
-  top: 1rem;
-  right: 12rem;
 }
 
 .info .about img:hover {
@@ -211,15 +220,21 @@ section,
   width: 60%;
   margin: 3rem 0;
   padding: 1rem;
-  justify-content: center;
   outline: solid 5px var(--second);
   background-color: var(--first);
   box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem 0.7rem 0;
   text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
 }
 
+.info .project  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
 .info .project .code-1 img {
-  width: 50%;
+  max-width: 350px;
   outline: solid var(--second);
   border-radius: 5px;
   margin: 20px;
@@ -232,20 +247,16 @@ section,
   box-shadow: black 0.7rem 0.8rem 1rem 0;
 }
 
-.project-container .project {
-  display: flex;
-}
-
 .code-screenshots {
-  position: relative;
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
 }
 
 .code-screenshots .code-2 {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 2rem;
+  max-width: 350px ;
+  gap: 1rem;
   outline: solid var(--second);
   border-radius: 5px;
   box-shadow: black 0.5rem 0.5rem 0.7rem 0;
@@ -257,23 +268,10 @@ section,
   box-shadow: black 0.7rem 0.8rem 1rem 0;
 }
 
-#sc1 {
-  position: absolute;
-  top: 0rem;
-  left: -5rem;
-}
-
-#sc2 {
-  position: absolute;
-  top: 4rem;
-  left: -8rem;
-}
-
 .code-screenshots .code-3 {
   font-size: 1.5rem;
-  width: 80%;
+  max-width: 250px;
   display: flex;
-  margin-top: 20px;
   padding: 10px 20px;
   border: 3px solid var(--second);
   background-color: transparent;
@@ -292,20 +290,8 @@ section,
   box-shadow: black 0.5rem 0.5rem 0.7rem 0;
 }
 
-#sc3 {
-  position: absolute;
-  top: 20rem;
-  left: -10rem;
-}
-
-#sc4 {
-  position: absolute;
-  top: 25rem;
-  left: -10rem;
-}
-
 .icon {
-  width: 15%;
+  max-width: 2rem ;
   height: auto;
 }
 
@@ -332,7 +318,7 @@ section,
   border-radius: 5px;
   outline: none;
   font-weight: 900;
-  width: 60%;
+  width: 600px;
   height: 50px;
   color: var(--second);
   background-color: var(--third);
@@ -350,7 +336,7 @@ section,
   border-radius: 5px;
   outline: none;
   font-weight: 900;
-  width: 60%;
+  width: 600px;
   height: 150px;
   color: var(--second);
   background-color: var(--third);
@@ -365,7 +351,7 @@ section,
 
 .mail button {
   display: flex;
-  width: 10%;
+  width: 100pxxx;
   color: var(--second);
   outline: var(--second) 5px solid;
   border: none;
