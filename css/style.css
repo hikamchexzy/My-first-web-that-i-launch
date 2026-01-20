@@ -1,564 +1,628 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
 }
 
 html {
-    background-color: #7B00B1;
-    scroll-behavior: smooth;
+  background-color: #7b00b1;
+  scroll-behavior: smooth;
 }
 
 :root {
-    --first: #8A38F5;
-    --second: #ffffff;
-    --third :#9994F7 ;
-    --fourth : #C30000;
-    --Fifth : #CA4300;
-    --sixth : #68A800;
+  --first: #8a38f5;
+  --second: #ffffff;
+  --third: #9994f7;
+  --fourth: #c30000;
+  --Fifth: #ca4300;
+  --sixth: #68a800;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 header {
-    position: sticky;
-    top: 0;
-    z-index:1000 ;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 30px;
-    background-color: var(--first);
-    color: var(--second); 
-    outline: var(--second) solid 2px ;
-    box-shadow: 0 0 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background-color: var(--first);
+  color: var(--second);
+  outline: var(--second) solid 2px;
+  box-shadow: 0 0 1rem 0;
 }
 
-.navbar .logo img{
-   width:50px;
-    cursor: default;
+.navbar .logo img {
+  width: 2rem;
+  cursor: default;
 }
 
 .navbar .logo img:hover {
-    transform: scale(1.2);
-    transition: 0.3s;
+  transform: scale(1.2);
+  transition: 0.3s;
 }
 
-.navbar .item  p {
-    width: 800;
-    color: var(--second);
+.navbar .item p {
+  width: 600;
+  color: var(--second);
 }
 
 .navbar .item {
-    gap: 2rem;
-    display: flex;
-    align-items: center;
-    color: var(--third);
+  gap: 1.5rem;
+  display: flex;
+  align-items: center;
+  color: var(--third);
 }
 
-.navbar .item a {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--second);
-    text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
+.logos {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--second);
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
 }
 
-.navbar .item a:hover {
-    color:var(--third);
-    transition: 0.3s;
-    text-shadow: 0 0 rgba(0, 0, 0, 0);    
-}
-
-.navbar .search:active{
-    color: var(--third);            
+.logos:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .navbar .garis {
-    display: none;
-    
+  display: none;
 }
 
-.main {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-section, 
-.info .about, 
-.info .skill-container, 
-.info .project-container, 
-.mail, 
+section,
+.info .about,
+.info .skill-container,
+.info .project-container,
+.mail,
 .contact {
-    scroll-margin-top: 100px;
+  scroll-margin-top: 100px;
 }
 
 .info .about {
-    margin: 50px 50px 30px;
-    padding: 40px;
-    gap: 20px;
-    display: flex;
-    border-radius: 5px;
-    width: 92%;
-    outline: solid 5px var(--second);
-    background-color: var(--third);
-    box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem 0.7rem 0 ;
+  margin-top: 3rem;
+  padding: 2.5rem;
+  gap: 1rem;
+  display: flex;
+  border-radius: 5px;
+  width: 90%;
+  outline: solid 5px var(--second);
+  background-color: var(--third);
+  box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem 0.7rem 0;
 }
 
 .info .about h1 {
-    font-weight: 800;
-    font-size: 50px;
-    color: var(--second);
-    text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
+  font-weight: 800;
+  font-size: 2rem;
+  color: var(--second);
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
 }
 
-.info .about h1 span{
-    font-weight: 800;
-    font-size: 20px;
-    margin-top: 20px;
-    color: var(--second);
-}   
+.info .about h1 p {
+  font-weight: 800;
+  font-size: 1rem;
+  margin-top: 20px;
+  color: var(--second);
+}
 
 .info .about img {
-    width: 450px;
-    box-shadow:10px;
-    position: absolute;
-    top: 1rem;
-    right: 3rem;
+  width: 25%;
+  box-shadow: 10px;
+  position: absolute;
+  top: -1rem;
+  right: 8rem;
 }
 
 .info .about img:hover {
-    top: -1rem;
-    right: -1rem;
-    width: 500px;
-    transition: 0.3s;
+ transform: scale(1.1);
+ transition: 0.3s;
 }
 
 .info .skill-container {
-   margin: 50px 50px 30px;
-    padding: 40px;
-    gap: 100px;
-    border-radius: 5px;
-    width: 92%;
-    justify-content: center;
-    outline: solid 5px var(--second);
-    background-color: var(--first);
-    box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem 0.7rem 0 ;
-    text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
+  margin-top: 3rem;
+  padding: 1rem;
+  gap: 100px;
+  border-radius: 5px;
+  width: 90%;
+  justify-content: center;
+  outline: solid 5px var(--second);
+  background-color: var(--first);
+  box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem 0.7rem 0;
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
 }
 
-.info .skill-container .sk1 {
-    font-weight: 800;
-    font-size: 40px;
-    color: var(--second);
+.sk1 {
+  font-weight: 800;
+  font-size: 2rem;
+  color: var(--second);
 }
 
-.info .skill-container .km1 {
-    font-weight: 800;
-    font-size: 40px;
-    color: var(--second);
-    padding-top: 5.5rem;
+.km1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--second);
 }
 
 .info .skill {
-    display: flex;
-    margin: 30px 50px 30px;
-    padding: 40px;
-    gap: 100px;
-    border-radius: 5px;
-    justify-content: center;
+  display: flex;
+  margin-top: 3rem;
+  padding: 40px;
+  gap: 100px;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+#kmp {
+  height:500px;
+  width: 200px;
+  outline: solid 5px var(--second);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: black 0.5rem 0.5rem 0.7rem 0;
 }
 
 .info .skill .kumpulan1 {
-    background-color: var(--fourth);
-    outline: solid 5px var(--second);
-    height: 700px;
-    border-radius: 5px;
-    display: block;
-    align-items: center;
-    box-shadow: black 0.5rem 0.5rem 0.7rem 0 ;
-}
-
-.info .skill .kumpulan1:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-    box-shadow: black 0.8rem 0.8rem 1rem 0 ;
+  background-color: var(--fourth);
 }
 
 .info .skill .kumpulan2 {
-    background-color: var(--Fifth);
-    outline: solid 5px var(--second);
-    height: 700px;
-    border-radius: 5px;
-    display: block;
-    align-items: center;
-    box-shadow: black 0.5rem 0.5rem 0.7rem 0 ;
-}
-
-
-.info .skill .kumpulan2:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-    box-shadow: black 0.8rem 0.8rem 1rem 0 ;
+  background-color: var(--Fifth);
 }
 
 .info .skill .kumpulan3 {
-    background-color: var(--sixth);
-    outline: solid 5px var(--second);
-    height: 700px;
-    border-radius: 5px;
-    display: block;
-    align-items: center;
-    box-shadow: black 0.5rem 0.5rem 0.7rem 0 ;
+  background-color: var(--sixth);
 }
 
-
-.info .skill .kumpulan3:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-    box-shadow: black 0.8rem 0.8rem 1rem 0 ;
+.info .skill #kmp:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: black 0.8rem 0.8rem 1rem 0;
 }
 
-.info .skill .kumpulan1 h1 {
-    font-weight: 800;
-    font-size: 50px;
-    color: var(--second);
-    text-align: center;
+.info .skill img {
+  padding: 0 0 20rem 0;
+  width: 50%;
+  box-shadow: 4px;
+  margin: 20px 50px 20px 50px;
 }
-
-.info .skill .kumpulan2 h1 {
-    font-weight: 800;
-    font-size: 50px;
-    color: var(--second);
-    text-align: center;
-}
-
-.info .skill .kumpulan3 h1 {
-    font-weight: 800;
-    font-size: 50px;
-    color: var(--second);
-    text-align: center;
-}
-
-.info .skill .kumpulan1 img {
-    padding: 0 0 200px 0;
-    width: 12rem;
-    height: 30rem;
-    box-shadow: 4px;
-    margin: 20px 50px 20px 50px;
-}
-
-.info .skill .kumpulan2 img {
-    padding: 0 0 200px 0;
-    width: 12rem;
-    height: 30rem;
-    box-shadow: 4px;
-    margin: 20px 50px 20px 50px;
-}
-
-.info .skill .kumpulan3 img {
-    padding: 0 0 200px 0;
-    width: 12rem;
-    height: 30rem;
-    box-shadow: 4px;
-    margin: 20px 50px 20px 50px;
-}
-
 
 .info .project-container {
-   margin: 50px 50px 30px;
-    padding: 40px;
-    gap: 100px;
-    border-radius: 5px;
-    width: 92%;
-    justify-content: center;
-    outline: solid 5px var(--second);
-    background-color: var(--first);
-    box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem 0.7rem 0 ;
-    text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 90%;
+  margin: 3rem 0;
+  padding: 1rem;
+  justify-content: center;
+  outline: solid 5px var(--second);
+  background-color: var(--first);
+  box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem 0.7rem 0;
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
 }
 
-.info .project-container h1 {
-    font-weight: 800;
-    font-size: 40px;
-    color: var(--second);
+.info .project .code-1 img {
+  width: 50%;
+  outline: solid var(--second);
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: black 0.5rem 0.5rem 0.7rem 0;
 }
 
-.info .project .kumpulan5 img {
-    width: 500px;
-    outline: solid var(--second);
-    border-radius: 5px;
-    margin: 20px 50px 20px 50px;
-    box-shadow: black 0.5rem 0.5rem 0.7rem 0;
-}
-
-
-.info .project .kumpulan5 img:hover {
-    transform: scale(1.03);
-    transition: 0.3s;
-    box-shadow: black 0.7rem 0.8rem 1rem 0 ;
+.info .project .code-1 img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: black 0.7rem 0.8rem 1rem 0;
 }
 
 .project-container .project {
-    display: flex;
+  display: flex;
 }
 
 .code-screenshots {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 50%;
 }
-
-.code-screenshots .code-1 {
-    width: 90%;
-    position: absolute;
-    top: 0;
-    left: 4rem;
-    outline: solid var(--second);
-    border-radius: 5px;
-    box-shadow: black 0.5rem 0.5rem 0.7rem 0;
-}
-
-
-.code-screenshots .code-1:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-    box-shadow: black 0.7rem 0.8rem 1rem 0 ;
-}
-
 
 .code-screenshots .code-2 {
-    width: 90%;
-    position: absolute;
-    top: 4rem;
-    left: 0rem;
-    outline: solid var(--second);
-    border-radius: 5px;
-    box-shadow: black 0.5rem 0.5rem 0.7rem 0;
+  width: 80%;
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  outline: solid var(--second);
+  border-radius: 5px;
+  box-shadow: black 0.5rem 0.5rem 0.7rem 0;
 }
 
-
 .code-screenshots .code-2:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-    box-shadow: black 0.7rem 0.8rem 1rem 0 ;
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: black 0.7rem 0.8rem 1rem 0;
+}
+
+#sc1 {
+position: absolute;
+  top: 0rem;
+  left: -2rem;
+}
+
+#sc2 {
+position: absolute;
+  top: 4rem;
+  left: -8rem;
 }
 
 .code-screenshots .code-3 {
-    position: absolute;
-    top: 30rem;
-    left: 0%;
-    font-size: 70px;
-    width: 600px;
-    display: flex;
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: 3px solid var(--second) ;
-    background-color: transparent;
-    border-radius: 5px;
-    color: var(--second);
-    cursor: pointer;
-    gap: 250px;
-    box-shadow: black 0.3rem 0.3rem 0.5rem 0 ;}
-
-.code-screenshots .code-4 {
-    position: absolute;
-    top: 38rem;
-    left: 0%;
-    font-size: 70px;
-    width: 600px;
-    display: flex;
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: var(--second) 3px solid;
-    background-color: transparent;
-    border-radius: 5px;
-    color: var(--second);
-    cursor: pointer;
-    gap: 235px;
-    box-shadow: black 0.3rem 0.3rem 0.5rem 0 ;
+  font-size: 2rem;
+  width: 70%;
+  display: flex;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 3px solid var(--second);
+  background-color: transparent;
+  border-radius: 5px;
+  color: var(--second);
+  cursor: pointer;
+  gap:5rem;
+  box-shadow: black 0.3rem 0.3rem 0.5rem 0;
 }
 
 .code-screenshots .code-3:hover {
-    background-color:var(--second) ;
-    color: var(--first);
-    border: var(--third) 3px solid;
-    transition: 0.3s;
-    box-shadow: black 0.5rem 0.5rem 0.7rem 0 ;
+  background-color: var(--second);
+  color: var(--first);
+  border: var(--third) 3px solid;
+  transition: 0.3s;
+  box-shadow: black 0.5rem 0.5rem 0.7rem 0;
 }
 
-.code-screenshots .code-4:hover {
-    background-color:var(--second) ;
-    color: var(--first);
-    border: var(--third) 3px solid;
-    transition: 0.3s;
-    box-shadow: black 0.5rem 0.5rem 0.7rem 0 ;
+#sc3 {
+    position: absolute;
+    top: 24rem;
+    left: -10rem;
+}
+
+#sc4 {
+    position: absolute;
+    top: 30rem;
+    left: -10rem;
 }
 
 .icon {
-    width: 90px;
-    height: auto;
+  width: 15%;
+  height: auto;
 }
 
 .mail {
-    display: block; 
-    text-align: center;
-    margin: 50px 70px 50px 50px;
-    background-color: var(--first);
-    outline: var(--second) 5px solid;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem 0.7rem 0 ;
-    text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  margin-bottom: 3rem;
+  background-color: var(--first);
+  outline: var(--second) 5px solid;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem 0.7rem 0;
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
 }
 
-.mail h1 {
-    text-align: left;
-    margin: 0 0 0 0.5rem;
-    color: var(--second);
+.em1 {
+  font-size: 1rem;
+  text-align: left;
+  margin: 0 0 0 0.5rem;
+  color: var(--second);
 }
 
-.mail .gmail input {
-    padding: 5px 10px;
-    border: 5px solid var(--second) ;
-    border-radius: 5px;
-    outline: none;
-    font-weight: 900;
-    width: 99%;
-    height: 50px;
-    color: var(--second);
-    background-color: var(--third);
-    font-size: 1rem;
-    box-shadow: rgb(0, 0, 0) 0.01rem 0.1rem 0.2rem 0 ;
+.mail input {
+  padding: 1%;
+  border: 5px solid var(--second);
+  border-radius: 5px;
+  outline: none;
+  font-weight: 900;
+  width: 60%;
+  height: 50px;
+  color: var(--second);
+  background-color: var(--third);
+  font-size: 1rem;
+  box-shadow: rgb(0, 0, 0) 0.01rem 0.1rem 0.2rem 0;
 }
 
-.mail .gmail input:active {
-background-color:transparent;
+.mail input:active {
+  background-color: transparent;
 }
 
-.mail .nama input {
-    padding: 5px 10px;
-    border: 5px solid var(--second) ;
-    border-radius: 5px;
-    outline: none;
-    font-weight: 900;
-    width: 99%;
-    height: 50px;
-    color: var(--second);
-    background-color: var(--third);
-    font-size: 1rem;
-    box-shadow: rgb(0, 0, 0) 0.01rem 0.1rem 0.2rem 0 ;
+.mail textarea {
+  padding: 5px 10px;
+  border: 5px solid var(--second);
+  border-radius: 5px;
+  outline: none;
+  font-weight: 900;
+  width: 60%;
+  height: 150px;
+  color: var(--second);
+  background-color: var(--third);
+  font-size: 1rem;
+  resize: none;
+  box-shadow: rgb(0, 0, 0) 0.01rem 0.1rem 0.2rem 0;
 }
 
-
-.mail .nama input:active {
-background-color:transparent;
+.mail textarea:active {
+  background-color: transparent;
 }
 
-.mail .pesan input {
-    padding: 5px ;
-    border: 5px solid var(--second) ;
-    border-radius: 5px;
-    outline: none;
-    font-weight: 900;
-    width: 99%;
-    height: 200px;
-    color: var(--second);
-    background-color: var(--third);
-    font-size: 1rem;
-    box-shadow: rgb(0, 0, 0) 0.01rem 0.1rem 0.2rem 0 ;
-
+.mail button {
+  display: flex;
+  width: 10%;
+  color: var(--second);
+  outline: var(--second) 5px solid;
+  border: none;
+  background-color: var(--third);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 5px 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  justify-content: center;
+  box-shadow: rgb(0, 0, 0) 0.3rem 0.3rem 0.5rem 0;
 }
 
-.pesan::placeholder {
-    color: var(--second);
-    opacity: 1;
-}
-
-
-.mail .pesan input:active {
-background-color:transparent;
-}
-
-.mail .buts a {
-    display: flex;
-    width: 300px;
-    color: var(--second);
-    outline: var(--second) 5px solid;
-    background-color: var(--third);
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: 900;
-    padding: 5px 10px;
-    margin-top:20px ;
-    margin-left: 10px;
-    justify-content: center;
-    box-shadow: rgb(0, 0, 0) 0.3rem 0.3rem 0.5rem 0 ;
-}
-
-.mail .buts a:active {
-    background-color:transparent;
-    box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem 0.7rem 0 ;
+.mail button :active {
+  background-color: transparent;
+  box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem 0.7rem 0;
 }
 
 .contact {
-    text-align: center;
-    margin: 150px 50px 30px; 
-    padding: 40px;
-    gap: 20px;
-    border-radius: 5px;
-    width: 92%;
-    justify-content: center;
-    color: var(--second);
-    outline: solid 5px var(--second);
-    background-color: var(--first);
-    box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem 0.7rem 0 ;
+  text-align: center;
+  margin: 150px 0px 30px;
+  padding: 40px;
+  gap: 20px;
+  border-radius: 5px;
+  width: 100%;
+  color: var(--second);
+  outline: solid 5px var(--second);
+  background-color: var(--first);
+  box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem 0.7rem 0;
 }
 
 .contact .sosial {
-    gap: 1rem;
-    padding: 10px 0;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-.contact .sosial a {
-    color: var(--second);
+  gap: 1rem;
+  padding: 10px 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .contact h1 {
-    font-weight: 900;
-    text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
+  font-weight: 900;
+  font-size: 2rem;
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .contact p {
-    font-weight: 700    ;
-    text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  font-size: 1rem;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.contact .sosial a:hover {
-transform: scale(1.1);
-transition: 0.3s;
+/* tablet */
+@media screen and (max-width: 1200px) {
+  
+.info .about img {
+  width: 30%;
+  box-shadow: 10px;
+  position: absolute;
+  top: 5rem;
+  right: 0rem;
 }
 
+.info .skill {
+  display: flex;
+  margin: 30px 50px 30px;
+  padding: 40px;
+  gap: 30px;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+#sc3 {
+    position: absolute;
+    top: 22rem;
+    left: 0;
+}
+
+#sc4 {
+    position: absolute;
+    top:28rem;
+    left: 0;
+}
+
+.code-screenshots .code-3 b {
+  font-size: 60% ;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+}
+
+/* handphone */
 @media screen and (max-width: 767px) {
-    .navbar .logo a span {
-        display: none;
-    }
+  .navbar .item a, .navbar .item p {
+    display: none;
+  }
 
-    .navbar .search input {
-        width: 150px;
-    }
+  .navbar .garis {
+    display: flex;
+    cursor: pointer;
+  }
 
-    .navbar .item { 
-        display: none;
-    }
+.info .about {
+  margin: 60px 50px 30px;
+  padding: 40px;
+  gap: 20px;
+  display: flex;
+  border-radius: 5px;
+  width: 90%;
+  outline: solid 5px var(--second);
+  background-color: var(--third);
+  box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem 0.7rem 0;
+}
 
-    .navbar .garis {
-        display: flex;
-        cursor: pointer;
-    }
+.info .about h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--second);
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.info .about h1 p {
+  font-weight: 800;
+  font-size: 0.7rem;
+  margin-top: 20px;
+  color: var(--second);
+}
+
+.info .about img {
+  width: 30%;
+  box-shadow: 10px;
+  position: absolute;
+  top: 6rem;
+  right: 0rem;
+}
+
+.info .skill {
+  display: flex;
+  margin: 30px 50px 30px;
+  padding: 40px;
+  gap: 40px;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+#kmp {
+  height: 500px;
+  width: 150px;
+  outline: solid 5px var(--second);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: black 0.5rem 0.5rem 0.7rem 0;
+}
+
+
+.info .skill img {
+  padding: 0 0 200px 0;
+  width: 7rem;
+  height: 30rem;
+  box-shadow: 4px;
+  margin: 20px 50px 20px 50px;
+}
+
+.km1 {
+  font-weight: 800;
+  font-size: 30px;
+  padding-bottom: 50px;
+  color: var(--second);
+}
+
+.sk1 {
+  font-weight: 800;
+  font-size: 2rem;
+  padding-bottom: 50px;
+  color: var(--second);
+}
+
+#sc1 {
+position: absolute;
+  top: 2rem;
+  left: 1rem;
+}
+
+#sc2 {
+position: absolute;
+  top: 4rem;
+  left: -0rem;
+}
+
+.code-screenshots .code-3 {
+  width: 80%;
+  display: flex;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 3px solid var(--second);
+  background-color: transparent;
+  border-radius: 5px;
+  color: var(--second);
+  cursor: pointer;
+  gap:40%;
+  box-shadow: black 0.3rem 0.3rem 0.5rem 0;
+}
+
+.code-screenshots .code-3:hover {
+  background-color: var(--second);
+  color: var(--first);
+  border: var(--third) 3px solid;
+  transition: 0.3s;
+  box-shadow: black 0.5rem 0.5rem 0.7rem 0;
+}
+
+.code-screenshots .code-3 b {
+  font-size:20% ;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+#sc3 {
+    position: absolute;
+    top: 14rem;
+    left: 0;
+}
+
+#sc4 {
+    position: absolute;
+    top: 18rem;
+    left: 0;
+}
+
+.icon {
+  width: 20%;
+  height: auto;
+}
+
+.info .skill-container .sk1 {
+  font-weight: 800;
+  font-size: 3rem;
+  color: var(--second);
+}
+
+.contact h1 {
+  font-weight: 900;
+  font-size: 1rem;
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.contact p {
+  font-weight: 700;
+  font-size: 0.5rem;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.logos {
+  font-size: 0.5rem;
+  font-weight: 800;
+  color: var(--second);
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
+}
 }

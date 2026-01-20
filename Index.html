@@ -26,13 +26,13 @@
         </div>
 
         <div class="item">
-          <a href="#ab">Home</a>
-          <a href="#sk">My skill</a>
-          <a href="#pj">My project</a>
-          <a href="#em">Contact me</a> 
+          <a class="logos" href="#ab">Home</a>
+          <a class="logos" href="#sk">My skill</a>
+          <a class="logos" href="#pj">My project</a>
+          <a class="logos" href="#em">Contact me</a> 
           <p><b>|</b></p>
-          <a href="https://github.com/hikamchexzy?tab=projects"><i  data-feather="github"></i></a>
-          <a href="https://www.instagram.com/p/DOgfzBaEpw-/?igsh=MW52Z3c0NDJudjVpMQ=="><i  data-feather="instagram"></i></a>
+          <a class="logos" href="https://github.com/hikamchexzy?tab=projects"><i  data-feather="github"></i></a>
+          <a class="logos" href="https://www.instagram.com/p/DOgfzBaEpw-/?igsh=MW52Z3c0NDJudjVpMQ=="><i  data-feather="instagram"></i></a>
         </div>
 
         <div class="garis">
@@ -46,10 +46,8 @@
         <div>
           <h1>
             Sup! My name is <br />Muhammad Hikam Nurul Ihsan <br />
-            <span
-              >I`am a Student of SMK Taruna Bhakti, Focusing on Web Development
-              and UI/UX design</span
-            >
+            <p>I`am a Student of SMK Taruna Bhakti, Focusing on Web Development
+              and UI/UX design</p>
           </h1>
         </div>
         <div><img class="pic1" src="assets/Adobe Express - file.png" alt="#" /></div>
@@ -58,15 +56,15 @@
       <section id="sk" class="skill-container">
         <h1 class="sk1">My skill</h1>
         <div class="skill">
-          <div class="kumpulan1">
+          <div id="kmp" class="kumpulan1">
             <img src="assets/figma (1).png" alt="#" />
             <h1 class="km1">figma</h1>
           </div>
-          <div class="kumpulan2">
+          <div id="kmp" class="kumpulan2">
             <img src="assets/html5.png" alt="#" />
             <h1 class="km1">html</h1>
           </div>
-          <div class="kumpulan3">
+          <div id="kmp" class="kumpulan3">
             <img src="assets/css3.png" alt="#" />
             <h1 class="km1">css</h1>
           </div>
@@ -74,23 +72,46 @@
       </section>
 
       <section id="pj" class="project-container">
-        <h1>My Project</h1>
+        <h1 class="sk1">My Project</h1>
         <div class="project">
-          <div class="kumpulan5">
+          <div class="code-1">
             <img src="assets/Graphic design resume templates - Challenge AAD UI DESIGN.jpeg" alt="#" />
           </div>
           <div class="code-screenshots">
-            <img class="code-1" src="assets/Screenshot 2025-10-08 182006.png" alt="">
-            <img class="code-2" src="assets/Screenshot 2025-10-08 182307.png" alt="">
-            <a href="assets/Screenshot 2025-10-08 182006.png" download="" class="code-3"><b>My CV</b><i data-feather="download" class="icon"></i></a>
-            <a href="https://github.com/hikamchexzy?tab=projects" class="code-4"><b>GitHub</b><i data-feather="github" class="icon"></i></a>
+            <img class="code-2" id="sc1" src="assets/Screenshot 2025-10-08 182006.png" alt="">
+            <img class="code-2" id="sc2" src="assets/Screenshot 2025-10-08 182307.png" alt="">
+            <a href="assets/Screenshot 2025-10-08 182006.png" download="" id="sc3" class="code-3"><b>My CV.</b><i data-feather="download" class="icon"></i></a>
+            <a href="https://github.com/hikamchexzy?tab=projects" id="sc4" class="code-3"><b>GitHub</b><i data-feather="github" class="icon"></i></a>
           </div>
         </div>
       </section>
       
-      <section id="em" class="mail">
-        
-      </section>
+     
+        <div id="em" class="mail">
+        <form id="contactform" action="https://formspree.io/f/xjkqgnrj"
+         method="POST"
+         >
+        <label>
+            <h1 class="em1">Name:</h1>
+            <input  id="name" type="text" name="name" required />
+        </label>
+
+          <label>
+            <h1 class="em1">Email:</h1>
+            <input id="email" type="email" name="email" required />
+          </label>
+
+          <label>
+            <h1 class="em1">Massage:</h1>
+            <textarea id="message" name="message" required></textarea>
+          </label>
+
+          <label>
+            <button id="submit" type="submit">Send</button>
+          </label>
+        </form>
+      </div>
+      
     </main>
 
     <footer id="fm" class="contact">
@@ -101,9 +122,52 @@
       </div>
       <p>see through my desain</p>
     </footer>
+    
+<script>
+  feather.replace();
 
-    <script>
-      feather.replace();
-    </script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contactForm");
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const message = document.getElementById("message");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // hentikan submit sementara
+
+      const nameValue = name.value.trim();
+      const emailValue = email.value.trim();
+      const messageValue = message.value.trim();
+
+      if (nameValue === "" || emailValue === "" || messageValue === "") {
+        alert("Semua field wajib diisi!");
+        return;
+      }
+
+      form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  if (
+    name.value.trim() === "" ||
+    email.value.trim() === "" ||
+    message.value.trim() === ""
+  ) {
+    alert("Semua field wajib diisi!");
+    return;
+  }
+
+  name.value = "";
+  email.value = "";
+  message.value = "";
+
+  form.submit();
+});
+
+      
+      form.submit();
+    });
+  });
+</script>
+
   </body>
 </html>
