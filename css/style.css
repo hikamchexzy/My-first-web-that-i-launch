@@ -102,7 +102,8 @@ section,
   gap: 1rem;
   display: flex;
   border-radius: 5px;
-  width: 90%;
+  width: 60%;
+  height: 320px;
   outline: solid 5px var(--second);
   background-color: var(--third);
   box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem 0.7rem 0;
@@ -110,29 +111,29 @@ section,
 
 .info .about h1 {
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--second);
   text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .info .about h1 p {
-  font-weight: 800;
-  font-size: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
   margin-top: 20px;
   color: var(--second);
 }
 
 .info .about img {
-  width: 25%;
+  width: 29%;
   box-shadow: 10px;
   position: absolute;
-  top: -1rem;
-  right: 8rem;
+  top: 1rem;
+  right: 12rem;
 }
 
 .info .about img:hover {
- transform: scale(1.1);
- transition: 0.3s;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .info .skill-container {
@@ -140,7 +141,7 @@ section,
   padding: 1rem;
   gap: 100px;
   border-radius: 5px;
-  width: 90%;
+  width: 60%;
   justify-content: center;
   outline: solid 5px var(--second);
   background-color: var(--first);
@@ -170,7 +171,7 @@ section,
 }
 
 #kmp {
-  height:500px;
+  height: 500px;
   width: 200px;
   outline: solid 5px var(--second);
   border-radius: 5px;
@@ -207,7 +208,7 @@ section,
 
 .info .project-container {
   border-radius: 5px;
-  width: 90%;
+  width: 60%;
   margin: 3rem 0;
   padding: 1rem;
   justify-content: center;
@@ -241,7 +242,7 @@ section,
 }
 
 .code-screenshots .code-2 {
-  width: 80%;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 2rem;
@@ -257,20 +258,20 @@ section,
 }
 
 #sc1 {
-position: absolute;
+  position: absolute;
   top: 0rem;
-  left: -2rem;
+  left: -5rem;
 }
 
 #sc2 {
-position: absolute;
+  position: absolute;
   top: 4rem;
   left: -8rem;
 }
 
 .code-screenshots .code-3 {
-  font-size: 2rem;
-  width: 70%;
+  font-size: 1.5rem;
+  width: 80%;
   display: flex;
   margin-top: 20px;
   padding: 10px 20px;
@@ -279,7 +280,7 @@ position: absolute;
   border-radius: 5px;
   color: var(--second);
   cursor: pointer;
-  gap:5rem;
+  gap: 5rem;
   box-shadow: black 0.3rem 0.3rem 0.5rem 0;
 }
 
@@ -292,15 +293,15 @@ position: absolute;
 }
 
 #sc3 {
-    position: absolute;
-    top: 24rem;
-    left: -10rem;
+  position: absolute;
+  top: 20rem;
+  left: -10rem;
 }
 
 #sc4 {
-    position: absolute;
-    top: 30rem;
-    left: -10rem;
+  position: absolute;
+  top: 25rem;
+  left: -10rem;
 }
 
 .icon {
@@ -309,7 +310,7 @@ position: absolute;
 }
 
 .mail {
-  width: 90%;
+  width: 60%;
   margin-bottom: 3rem;
   background-color: var(--first);
   outline: var(--second) 5px solid;
@@ -327,7 +328,6 @@ position: absolute;
 }
 
 .mail input {
-  padding: 1%;
   border: 5px solid var(--second);
   border-radius: 5px;
   outline: none;
@@ -387,11 +387,11 @@ position: absolute;
 
 .contact {
   text-align: center;
-  margin: 150px 0px 30px;
+  margin-top: 150px;
   padding: 40px;
   gap: 20px;
-  border-radius: 5px;
   width: 100%;
+  height: 150px;
   color: var(--second);
   outline: solid 5px var(--second);
   background-color: var(--first);
@@ -408,58 +408,57 @@ position: absolute;
 
 .contact h1 {
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .contact p {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* tablet */
 @media screen and (max-width: 1200px) {
-  
-.info .about img {
-  width: 30%;
-  box-shadow: 10px;
-  position: absolute;
-  top: 5rem;
-  right: 0rem;
-}
+  .info .about img {
+    width: 30%;
+    box-shadow: 10px;
+    position: absolute;
+    top: 5rem;
+    right: 0rem;
+  }
 
-.info .skill {
-  display: flex;
-  margin: 30px 50px 30px;
-  padding: 40px;
-  gap: 30px;
-  border-radius: 5px;
-  justify-content: center;
-}
+  .info .skill {
+    display: flex;
+    margin: 30px 50px 30px;
+    padding: 40px;
+    gap: 30px;
+    border-radius: 5px;
+    justify-content: center;
+  }
 
-#sc3 {
+  #sc3 {
     position: absolute;
     top: 22rem;
     left: 0;
-}
+  }
 
-#sc4 {
+  #sc4 {
     position: absolute;
-    top:28rem;
+    top: 28rem;
     left: 0;
-}
+  }
 
-.code-screenshots .code-3 b {
-  font-size: 60% ;
+  .code-screenshots .code-3 b {
+    font-size: 60%;
     text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-}
-
+  }
 }
 
 /* handphone */
 @media screen and (max-width: 767px) {
-  .navbar .item a, .navbar .item p {
+  .navbar .item a,
+  .navbar .item p {
     display: none;
   }
 
@@ -468,161 +467,160 @@ position: absolute;
     cursor: pointer;
   }
 
-.info .about {
-  margin: 60px 50px 30px;
-  padding: 40px;
-  gap: 20px;
-  display: flex;
-  border-radius: 5px;
-  width: 90%;
-  outline: solid 5px var(--second);
-  background-color: var(--third);
-  box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem 0.7rem 0;
-}
+  .info .about {
+    margin: 60px 50px 30px;
+    padding: 40px;
+    gap: 20px;
+    display: flex;
+    border-radius: 5px;
+    width: 90%;
+    outline: solid 5px var(--second);
+    background-color: var(--third);
+    box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem 0.7rem 0;
+  }
 
-.info .about h1 {
-  font-weight: 800;
-  font-size: 1.5rem;
-  color: var(--second);
-  text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
-}
+  .info .about h1 {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--second);
+    text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
+  }
 
-.info .about h1 p {
-  font-weight: 800;
-  font-size: 0.7rem;
-  margin-top: 20px;
-  color: var(--second);
-}
+  .info .about h1 p {
+    font-weight: 800;
+    font-size: 0.7rem;
+    margin-top: 20px;
+    color: var(--second);
+  }
 
-.info .about img {
-  width: 30%;
-  box-shadow: 10px;
-  position: absolute;
-  top: 6rem;
-  right: 0rem;
-}
+  .info .about img {
+    width: 30%;
+    box-shadow: 10px;
+    position: absolute;
+    top: 6rem;
+    right: 0rem;
+  }
 
-.info .skill {
-  display: flex;
-  margin: 30px 50px 30px;
-  padding: 40px;
-  gap: 40px;
-  border-radius: 5px;
-  justify-content: center;
-}
+  .info .skill {
+    display: flex;
+    margin: 30px 50px 30px;
+    padding: 40px;
+    gap: 40px;
+    border-radius: 5px;
+    justify-content: center;
+  }
 
-#kmp {
-  height: 500px;
-  width: 150px;
-  outline: solid 5px var(--second);
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: black 0.5rem 0.5rem 0.7rem 0;
-}
+  #kmp {
+    height: 500px;
+    width: 150px;
+    outline: solid 5px var(--second);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: black 0.5rem 0.5rem 0.7rem 0;
+  }
 
+  .info .skill img {
+    padding: 0 0 200px 0;
+    width: 7rem;
+    height: 30rem;
+    box-shadow: 4px;
+    margin: 20px 50px 20px 50px;
+  }
 
-.info .skill img {
-  padding: 0 0 200px 0;
-  width: 7rem;
-  height: 30rem;
-  box-shadow: 4px;
-  margin: 20px 50px 20px 50px;
-}
+  .km1 {
+    font-weight: 800;
+    font-size: 30px;
+    padding-bottom: 50px;
+    color: var(--second);
+  }
 
-.km1 {
-  font-weight: 800;
-  font-size: 30px;
-  padding-bottom: 50px;
-  color: var(--second);
-}
+  .sk1 {
+    font-weight: 800;
+    font-size: 2rem;
+    padding-bottom: 50px;
+    color: var(--second);
+  }
 
-.sk1 {
-  font-weight: 800;
-  font-size: 2rem;
-  padding-bottom: 50px;
-  color: var(--second);
-}
+  #sc1 {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+  }
 
-#sc1 {
-position: absolute;
-  top: 2rem;
-  left: 1rem;
-}
+  #sc2 {
+    position: absolute;
+    top: 4rem;
+    left: -0rem;
+  }
 
-#sc2 {
-position: absolute;
-  top: 4rem;
-  left: -0rem;
-}
+  .code-screenshots .code-3 {
+    width: 80%;
+    display: flex;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 3px solid var(--second);
+    background-color: transparent;
+    border-radius: 5px;
+    color: var(--second);
+    cursor: pointer;
+    gap: 40%;
+    box-shadow: black 0.3rem 0.3rem 0.5rem 0;
+  }
 
-.code-screenshots .code-3 {
-  width: 80%;
-  display: flex;
-  margin-top: 20px;
-  padding: 10px 20px;
-  border: 3px solid var(--second);
-  background-color: transparent;
-  border-radius: 5px;
-  color: var(--second);
-  cursor: pointer;
-  gap:40%;
-  box-shadow: black 0.3rem 0.3rem 0.5rem 0;
-}
+  .code-screenshots .code-3:hover {
+    background-color: var(--second);
+    color: var(--first);
+    border: var(--third) 3px solid;
+    transition: 0.3s;
+    box-shadow: black 0.5rem 0.5rem 0.7rem 0;
+  }
 
-.code-screenshots .code-3:hover {
-  background-color: var(--second);
-  color: var(--first);
-  border: var(--third) 3px solid;
-  transition: 0.3s;
-  box-shadow: black 0.5rem 0.5rem 0.7rem 0;
-}
-
-.code-screenshots .code-3 b {
-  font-size:20% ;
+  .code-screenshots .code-3 b {
+    font-size: 20%;
     text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-}
+  }
 
-#sc3 {
+  #sc3 {
     position: absolute;
     top: 14rem;
     left: 0;
-}
+  }
 
-#sc4 {
+  #sc4 {
     position: absolute;
     top: 18rem;
     left: 0;
-}
+  }
 
-.icon {
-  width: 20%;
-  height: auto;
-}
+  .icon {
+    width: 20%;
+    height: auto;
+  }
 
-.info .skill-container .sk1 {
-  font-weight: 800;
-  font-size: 3rem;
-  color: var(--second);
-}
+  .info .skill-container .sk1 {
+    font-weight: 800;
+    font-size: 3rem;
+    color: var(--second);
+  }
 
-.contact h1 {
-  font-weight: 900;
-  font-size: 1rem;
-  text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
-}
+  .contact h1 {
+    font-weight: 900;
+    font-size: 1rem;
+    text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
+  }
 
-.contact p {
-  font-weight: 700;
-  font-size: 0.5rem;
-  text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
-}
+  .contact p {
+    font-weight: 700;
+    font-size: 0.5rem;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+  }
 
-.logos {
-  font-size: 0.5rem;
-  font-weight: 800;
-  color: var(--second);
-  text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
-}
+  .logos {
+    font-size: 0.5rem;
+    font-weight: 800;
+    color: var(--second);
+    text-shadow: 2px 3px rgba(0, 0, 0, 0.2);
+  }
 }
